@@ -6,13 +6,13 @@ import { AiOutlinePhone } from "react-icons/ai";
 
 function Navbar() {
   return (
-    <div className="py-5 flex items-center justify-between flex-row-reverse">
+    <div className="py-5 flex items-center justify-between flex-col gap-5 md:flex-row-reverse max-md:bg-slate-500/10">
       <div>
         <Link href="/">
           <Image src="/Logo.png" width={156} height={126} alt="Logo" />
         </Link>
       </div>
-      <div>
+      <div className="max-md:pt-2">
         <ul className="flex gap-5 flex-row-reverse">
           <Link href="/" className="flex flex-row-reverse items-center gap-2">
             <BiHome className="text-lg font-bold" />
